@@ -1,0 +1,26 @@
+{
+  "name": "haha",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon --exec babel-node src/router/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-router": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "nodemon": "^2.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div>
+    <a href="http://localhost:3000/datum">Datum</a><br>
+    <a href="http://localhost:3000/prognoza">Prognoza</a><br>
+    <output id="mhm"></output><br>
+    <output id="oof"></output>
+  </div>
+  <script>
+var ree=async function (name) 
+{
+  let response = await fetch(`http://localhost:3000/${name}`);
+  let data = await response.json()
+  return data;
+}
+ree('datum')
+  .then(data => { 
+  console.log(data)
+  document.getElementById('mhm').value = data;
+  });
+ree('prognoza')
+  .then(data => { 
+    document.getElementById('oof').value = data;
+  console.log(data)
+  });
+ 
+  </script>
+</body>
+</html>
